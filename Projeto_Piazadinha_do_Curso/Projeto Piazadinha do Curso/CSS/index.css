@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+*, h1, p{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --font-padrão: Inter;
+
+    --cor00: #d4d4d4;
+    --cor01: #EDF1FA;
+    --cor02: #2166BC;
+    --cor03: #184A89;
+    --cor04: #024059;
+    --cor05: #0D0D0D;
+}
+body{
+    font-family: var(--font-padrão);
+    background-color: var(--cor01);
+}
+
+/* Cabeçalho */
+
+header{
+    background-image: url('../imagens/header.png');
+    background-attachment: fixed;
+    background-size: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px;
+    height: auto;
+    width: auto;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.219);
+}
+header h1{
+    color: var(--cor01);
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.377);
+    margin: 11px 0;
+}
+nav > a{
+    color: var(--cor01);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9em;
+    border: 2px solid var(--cor01);
+    border-radius: 20px;
+    width: 109px;
+    padding: 11px 25px;
+    margin-right: 50px;
+}
+nav > a:hover{
+    background-color: var(--cor04); 
+    color: white;
+    transition-duration: 0.2s;
+}
+nav > select{
+    background: none;
+    color: var(--cor01);
+    font-size: 0.9em;
+    font-weight: bold;
+    border: 2px solid var(--cor01);
+    border-radius: 20px;
+    width: 109px;
+    padding: 11px 16px;
+    margin: 10px 50px 10px 0;
+}
+nav select:hover{
+    background-color: var(--cor04);
+    color: var(--cor01);
+    transition-duration: 0.2s;
+}
+nav option{
+    background-color: var(--cor04);
+    color: var(--cor01);
+    transition-duration: 0.2s;
+}
+.teste{
+    padding: 50px;
+}
+
+/* Corpo */
+
+img.monitor{
+    display: block;
+    width: 100%;
+    padding-top: 30px;
+    margin: auto;
+}
+section.conteudos{
+    background-image: url('../imagens/header.png');
+    height: auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main section h1{
+    color: var(--cor01);
+    text-align: center;
+    padding: 45px;
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.377);
+}
+article{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+article > aside{
+    background-color: var(--cor01);
+    width: 300px;
+    margin: 20px 0 60px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.493);
+}
+article > aside h2{
+    background-color: var(--cor02);
+    color: var(--cor01);
+    text-align: center;
+    padding: 10px;
+    margin: -20px -20px 0 -20px;
+    border-radius: 10px 10px 0 0;
+}
+article > aside p{
+    text-align: justify;
+    padding-top: 15px;
+}
+img.logo-conteudo{
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+img.caderno{
+    display: block;
+    margin: auto;
+    width: 68%;
+}
+
+/* Rodapé */
+
+footer{
+    clear: both;
+    padding: 5px;
+    color: var(--cor04);
+    font-weight: bold;
+    background-color: var(--cor01);
+    text-align: center;
+}
