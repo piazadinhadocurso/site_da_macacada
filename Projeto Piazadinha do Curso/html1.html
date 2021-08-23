@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/cabeçalho.css">
+    <link rel="stylesheet" href="CSS/conteúdo.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>| Estrutura</title>
+    <style>
+        .a1{
+            color: grey;
+        }
+        .a2{
+            color: #a1351a;
+        }
+        .a3{
+            color: #2166BC;
+        }
+        .a4{
+            color: #2166BC;
+        }
+        .a5{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HTML basico</h1>
+        <nav>
+            <a href="index.html">HOME</a>
+        <select name="html" onchange="location = this.value;">
+            <option value="#">HTML</option>
+            <option value="html0.html">introduçao</option>
+            <option value="html1.html">HTML basico</option>
+            <option value="html2.html">HTML intermedario</option>
+            <option value="html3.html">HTML avançado</option>
+        </select>
+        <select name="css" onchange="location = this.value;">
+            <option value="#">CSS</option>
+            <option value="css0.html">introduçao</option>
+            <option value="css1.html">CSS básico</option>
+            <option value="css2.html">CSS intermedario</option>
+            <option value="css3.html">CSS avançado</option>
+        </select>
+        <select name="js" onchange="location = this.value;">
+            <option value="#">JS</option>
+            <option value="js0.html">introduçao</option>
+            <option value="js1.html">js basico</option>
+            <option value="js2.html">js intermedario</option>
+            <option value="js3.html">js avançado</option>
+        </select>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h1>Estrutura HTML5</h1>
+            <h2>Estrutura básica</h2>
+            <p>A estrutura básica do HTML é definida pelas seguintes tags:</p>
+                <ul>
+                    <li><strong>DOCTYPE html:</strong> essa tag serve basicamente para indicar a versão do HTML que está sendo usada. No caso, a versão é o HTML5.</li>
+                    <li><strong>html:</strong> é a tag que delimita o documento, ou seja, tudo o que fizer parte da sua página deve estar dentro dessa tag.</li>
+                    <li><strong>head:</strong> a tag head é o cabeçalho do site, ou seja, onde você definirá todas as configuações e comportamentos do site, como por exemplo os estilos, scripts, título, protocolo UTF-8 e entre outros. Lembrando que o que está dentro dessa tag não ficará visível do conteúdo do site.</li>
+                    <li><strong>meta:</strong> as tagas meta servem para atribuir algumas configurações e outros fins para o seu documento. Por exemplo, o meta charset="UTF-8" é um identificador de caracteres especiais/acentos para o site.</li>
+                    <li><strong>title:</strong> o title é o título do site que irá aparecer na aba do seu navegador.</li>
+                    <li><strong>body:</strong> esse é o local onde irá aparecer todo o seu conteúdo visual do seu site, como os títulos, parágrafos, botões, menus etc.</li>
+                </ul>
+            <pre>
+                <code>
+                
+                    <span class="a1">&lt;!DOCTYPE html&gt;</span>
+                    <span class="a2">&lt;html lang="en"&gt;</span>
+                    <span class="a3">&lt;head&gt;</span>
+                    <span class="a5">
+                        &lt;meta charset="UTF-8"&gt;
+                        &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">&gt;
+                        &lt;title>Document&lt;/title&gt;
+                    </span>
+                    <span class="a3">&lt;/head&gt;</span>
+                    <span class="a4">&lt;body&gt;</span>
+                    
+                    <span class="a4">&lt;/body&gt;</span>
+                    <span class="a2">&lt;/html&gt;</span>
+
+                </code>
+            </pre>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; Copyright 2021 - Piazadinhadocurso-LTDA - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
